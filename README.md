@@ -20,9 +20,9 @@ pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-
 ```
 Furthermore you have to enable the api, download the credentials and copy them inside the folder actions.
 
-```
+
 https://developers.google.com/calendar/quickstart/python
-```
+
 1) Create a file __init__.py inside the folder actions
 2) Inside the folder actions launch the action server with
 
