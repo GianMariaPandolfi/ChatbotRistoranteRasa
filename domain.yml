@@ -1,0 +1,71 @@
+%YAML 1.1
+---
+actions:
+- action_check_calendar
+- action_controllo_richiesta
+- action_default_fallback
+- action_insert_calendar
+- utter_informazioni_apertura
+- utter_saluto_finale
+- utter_saluto_iniziale
+entities:
+- data
+- num_persone
+- number
+- orario
+- time
+forms:
+- prenotazione_form
+intents:
+- saluto_finale
+- informa
+- afferma
+- richiesta_di_prenotazione
+- nega
+- saluto_iniziale
+- informazioni_apertura
+slots:
+  available_seats:
+    type: bool
+  conferma_prenotazione:
+    type: bool
+  data:
+    auto_fill: false
+    type: unfeaturized
+  num_persone:
+    auto_fill: false
+    type: unfeaturized
+  orario:
+    auto_fill: false
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+templates:
+  utter_ask_data:
+  - text: Per quale giorno voleva prenotare?
+  utter_ask_num_persone:
+  - text: Quante persone sarete?
+  utter_ask_orario:
+  - text: A che ora?
+  utter_confirmation:
+  - text: "Ecco la sua prenotazione:\n - giorno: {data}\n - orario: {orario}\n - numero\
+      \ persone: {num_persone}\n Desidera confermarla?"
+  utter_confirmed:
+  - text: La sua prenotazione e' confermata
+  utter_data_complete:
+  - text: tutti i dati presi
+  utter_default:
+  - text: Mi dispiace ma non ho capito, potresti spiegarti meglio?
+  utter_informazioni_apertura:
+  - text: siamo aperti dal martedi alla domenica, per pranzo 11:00-15:00, per cena
+      18:00-23:00.
+  utter_lunedi_chiuso:
+  - text: il lunedi siamo chiusi.
+  utter_not_confirmed:
+  - text: La sua prenotazione non e' stata confermata
+  utter_orario_chiuso:
+  - text: siamo chiusi a quell'ora.
+  utter_saluto_finale:
+  - text: Ciao, a presto.
+  utter_saluto_iniziale:
+  - text: Ciao, vuoi sapere gli orari di apertura o vuoi effettuare una prenotazione?
