@@ -46,3 +46,44 @@ or in the interactive mode with:
 ```
 rasa interactive --endpoints endpoints.yml 
 ```
+
+
+The bot is not ready to understand everything,
+but it should be ready to understand a typical conversation like this:
+
+```
+- Ciao
+
+                Ciao, vuoi sapere gli orari di apertura o vuoi effettuare una prenotazione?
+                
+- vorrei sapere gli orari di apertura
+              
+              siamo aperti dal martedi alla domenica, per pranzo dalle 11:00 alle 15:00, per cena dalle 18:00 alle 23:00.
+              
+- vorrei effettuare una prenotazione
+                
+               Per quale giorno voleva prenotare?
+
+- per martedi
+               A che ora?
+                
+- alle 9 di sera          
+
+               Quante persone sarete?
+                
+- saremo 3
+               Ecco la sua prenotazione:
+                - giorno: 2019-06-25
+                - orario: 21:00:00.000+02:00
+                - numero persone: 3
+                Desidera confermarla?
+
+- si
+                 La sua prenotazione è confermata.
+ 
+- grazie, a presto
+
+                  Ciao, a presto.
+ 
+```                
+
