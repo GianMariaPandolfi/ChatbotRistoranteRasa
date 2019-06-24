@@ -238,6 +238,9 @@ class ActionCheckCalendar(Action):
          if check_available_seats(events, number_of_people):  # si controlla che ci siano posti disponibili
              dispatcher.utter_template("utter_confirmation", tracker)
              return [SlotSet('available_seats', True)]
+         else:
+             dispatcher.utter_message("Mi dispiace ma siamo al completo.")
+             return [SlotSet('available_seats', False)]
 
 
 class ActionInsertCalendar(Action):
