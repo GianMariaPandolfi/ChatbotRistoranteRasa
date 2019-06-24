@@ -17,6 +17,7 @@
 - si, va benissimo
 - si
 
+
 ## intent:informa
 - 1
 - 2
@@ -36,7 +37,9 @@
 - saremo 3 persone
 - 9
 - saremo tre
-
+- per martedi
+- alle 13
+- saremo 3
 
 ## intent:informazioni_apertura
 - Volevo sapere se lunedì siete aperti
@@ -91,6 +94,7 @@
 - vorrei prenotare per domani per [3](num_persone) persone
 - ciao vorrei prenotare per domani
 - vorrei prenotare per domani per [8](num_persone)
+- vorrei effettuare una prenotazione
 
 ## intent:saluto_finale
 - A presto
@@ -109,6 +113,7 @@
 - a presto
 - grazie, a presto
 - grazie a presto
+- grazie, a presto
 
 ## intent:saluto_iniziale
 - Ciao
@@ -120,6 +125,7 @@
 - ei
 - ehi
 - buongiorno
+- ciao
 
 ## synonym:4
 - quattro
