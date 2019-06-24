@@ -47,6 +47,12 @@ or in the interactive mode with:
 rasa interactive --endpoints endpoints.yml 
 ```
 
+6) We can also launch our bot on Rasa x (UI) using:
+```
+rasa x --endpoints endpoints.yml 
+```
+
+
 
 The bot is not ready to understand everything,
 but it should be ready to understand a typical conversation like this:
