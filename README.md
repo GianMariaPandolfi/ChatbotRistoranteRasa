@@ -26,7 +26,10 @@ https://developers.google.com/calendar/quickstart/python
 To run Rasa x you will also need SQLite to store data:
 https://sqlite.org/download.html
 
-1) Create a file __init__.py inside the folder actions
+1) Inside the folder actions create a file
+```
+__init__.py
+```
 2) Inside the folder actions launch the action server with
 
 ```
